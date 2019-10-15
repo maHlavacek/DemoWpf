@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnHello" Height="120" Width="200" Background="AliceBlue">
+        <Button x:Name="btnDefault" Background="red"></Button>
+        <Button x:Name="btnHello" Height="120" Width="200" Background="{Binding ElementName=btnDefault, Path=Background}">
             <Button.Content>
                 <Ellipse Width="200" Height="120" Fill="LightBlue"></Ellipse>
             </Button.Content>
