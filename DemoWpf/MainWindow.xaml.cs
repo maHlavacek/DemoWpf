@@ -23,6 +23,12 @@ namespace DemoWpf
         public MainWindow()
         {
             InitializeComponent();
+            btnHello.Click += BtnHello_Click;
+        }
+
+        private void BtnHello_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello from Button", "DemoButton", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
