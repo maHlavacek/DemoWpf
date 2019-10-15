@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnHello" Height="120" Width="120">Hello</Button>
+        <Button x:Name="btnHello" Height="120" Width="200" Background="AliceBlue">
+            <Button.Content>
+                <Ellipse Width="200" Height="120" Fill="LightBlue"></Ellipse>
+            </Button.Content>
+        </Button>
     </Grid>
 </Window>
